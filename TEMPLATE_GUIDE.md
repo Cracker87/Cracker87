@@ -1,8 +1,23 @@
-# Financial Model Template Guide
+# Comprehensive Financial Model Template Guide
 
 ## Overview
 
-This template follows best practices for spreadsheet design tailored for Indian financial reporting.
+This is a complete financial model template designed for Indian businesses. It includes all core financial statements, supporting schedules, valuation analysis, and an executive dashboard.
+
+---
+
+## Template Files
+
+| File | Sheet Name | Purpose |
+|------|------------|---------|
+| `01_INPUTS_ASSUMPTIONS.csv` | Inputs | All hardcoded assumptions |
+| `02_PROFIT_LOSS.csv` | P&L | Income Statement |
+| `03_CASH_FLOW.csv` | Cash Flow | Cash Flow Statement |
+| `04_BALANCE_SHEET.csv` | Balance Sheet | Financial Position |
+| `05_SCHEDULES.csv` | Schedules | Working Capital, Debt, Depreciation |
+| `06_VALUATION.csv` | Valuation | DCF & Comparable Analysis |
+| `07_SENSITIVITY.csv` | Sensitivity | Scenario & Sensitivity Analysis |
+| `08_DASHBOARD.csv` | Dashboard | Executive Summary |
 
 ---
 
@@ -14,12 +29,9 @@ This template follows best practices for spreadsheet design tailored for Indian 
 - **Content begins at B2**: Provides visual breathing room
 
 ### 2. Structure: Centralized Inputs
-```
-Rows 2-35:   ASSUMPTIONS & INPUTS (all hardcoded values here)
-Rows 36-55:  CALCULATIONS (formulas referencing inputs)
-Rows 56-65:  KEY METRICS (ratios and analysis)
-Rows 66+:    OUTPUT SUMMARY (final results)
-```
+All assumptions in one sheet (01_INPUTS_ASSUMPTIONS.csv)
+- No hardcoded numbers in calculation sheets
+- Single source of truth for all variables
 
 ### 3. Formulas: Simple & Readable
 - Each calculation broken into separate rows
@@ -29,40 +41,144 @@ Rows 66+:    OUTPUT SUMMARY (final results)
 
 ---
 
-## Template Sections
+## Sheet-by-Sheet Guide
 
-### Section 1: Assumptions & Inputs (Rows 6-32)
+### Sheet 1: Inputs & Assumptions
 
-| Subsection | Purpose |
-|------------|---------|
-| General Inputs | Model parameters (dates, currency, period) |
-| Revenue Assumptions | Growth rates, base revenue |
-| Cost Assumptions | Variable and fixed cost percentages |
-| Financing Assumptions | Interest, tax, depreciation rates |
+**Purpose**: Central repository for all model inputs
 
-**Key Rule**: ALL hardcoded numbers go here. No magic numbers in formulas below.
+| Section | Contents |
+|---------|----------|
+| General Inputs | Company info, dates, projection period |
+| Revenue Assumptions | Product mix, pricing, volumes, growth rates |
+| Cost Assumptions | Variable costs (%), Fixed costs (₹) |
+| Financing Assumptions | Loan details, interest rates, equity |
+| Tax & Depreciation | Tax rates, depreciation rates by asset |
+| Working Capital | Receivable/Inventory/Payable days |
+| Capex Assumptions | Initial capex, maintenance capex |
 
-### Section 2: Calculations (Rows 34-52)
+**Key Rule**: ALL numbers that can change go here.
 
-| Subsection | Purpose |
-|------------|---------|
-| Revenue Projection | Year-by-year revenue with growth |
-| Cost Breakdown | Itemized costs per year |
-| Profitability | P&L from Gross Profit to Net Profit |
+---
 
-**Key Rule**: Every cell contains ONLY formulas referencing the Inputs section.
+### Sheet 2: Profit & Loss Statement
 
-### Section 3: Key Metrics (Rows 54-60)
+**Purpose**: Income statement with 5-year projections
 
-| Metric | Formula Logic |
-|--------|---------------|
-| Gross Margin | (Revenue - COGS) / Revenue |
-| EBITDA Margin | EBITDA / Revenue |
-| Net Profit Margin | Net Profit / Revenue |
+| Section | Contents |
+|---------|----------|
+| Revenue | Product-wise breakdown, discounts |
+| Other Income | Interest, miscellaneous |
+| COGS | Raw material, labour, overheads |
+| Operating Expenses | Detailed expense breakdown |
+| EBITDA | Operating profit before depreciation |
+| Depreciation | Asset-wise depreciation |
+| Finance Costs | Interest on term loan, WC loan |
+| Tax | Current tax, deferred tax |
+| Net Profit | Bottom line with EPS |
 
-### Section 4: Output Summary (Rows 62+)
+**Margins Calculated**: Gross, EBITDA, EBIT, PBT, Net Profit
 
-Executive summary with totals and averages for quick review.
+---
+
+### Sheet 3: Cash Flow Statement
+
+**Purpose**: Track cash movements across three activities
+
+| Activity | Includes |
+|----------|----------|
+| Operating | Net profit adjustments, working capital changes |
+| Investing | Capex, asset sales, interest received |
+| Financing | Equity, borrowings, repayments, dividends |
+
+**Key Metrics**:
+- Free Cash Flow (FCF)
+- Debt Service Coverage Ratio (DSCR)
+- Interest Coverage Ratio
+
+---
+
+### Sheet 4: Balance Sheet
+
+**Purpose**: Financial position snapshot
+
+| Section | Includes |
+|---------|----------|
+| Equity | Share capital, reserves |
+| Non-Current Liabilities | Term loans (long-term portion) |
+| Current Liabilities | Short-term debt, payables, provisions |
+| Non-Current Assets | Fixed assets (gross & net), intangibles |
+| Current Assets | Inventory, receivables, cash |
+
+**Ratios Calculated**:
+- Liquidity: Current ratio, Quick ratio
+- Solvency: Debt/Equity, Debt/Assets
+- Efficiency: Asset turnover, Fixed asset turnover
+- Profitability: ROA, ROE, ROCE
+
+**Built-in Balance Check**: Assets - Liabilities = 0
+
+---
+
+### Sheet 5: Supporting Schedules
+
+**Purpose**: Detailed calculations supporting main statements
+
+| Schedule | Purpose |
+|----------|---------|
+| Working Capital | DSO, DIO, DPO calculations |
+| Debt Amortization | EMI schedule with principal/interest split |
+| Working Capital Loan | Utilization and interest |
+| Depreciation | Asset-wise WDV depreciation schedule |
+
+---
+
+### Sheet 6: Valuation
+
+**Purpose**: Estimate enterprise and equity value
+
+| Method | Approach |
+|--------|----------|
+| WACC Calculation | Cost of equity (CAPM), cost of debt |
+| DCF Valuation | 5-year FCF + Terminal value |
+| Comparable Multiples | EV/Revenue, EV/EBITDA, P/E |
+| Weighted Average | Combined valuation estimate |
+
+**Outputs**: Enterprise Value, Equity Value, Per Share Value
+
+---
+
+### Sheet 7: Sensitivity Analysis
+
+**Purpose**: Understand impact of variable changes
+
+| Analysis | Variables |
+|----------|-----------|
+| Revenue Sensitivity | -20% to +20% impact on profit |
+| Cost Sensitivity | Raw material %, Fixed cost changes |
+| Interest Rate | 10% to 15% rate scenarios |
+| Two-Way Tables | Revenue Growth vs WACC, EBITDA vs Terminal Growth |
+| Scenario Analysis | Worst/Conservative/Base/Optimistic/Best |
+| Break-Even | Operating, Cash, Debt Service break-even |
+
+**Probability-Weighted Valuation**: Expected value calculation
+
+---
+
+### Sheet 8: Executive Dashboard
+
+**Purpose**: One-page summary for decision makers
+
+| Section | Contents |
+|---------|----------|
+| KPI Summary | Revenue, EBITDA, Net Profit, Valuation |
+| 5-Year Trends | Financial metrics with visual indicators |
+| Revenue Breakdown | Product-wise contribution |
+| Capital Structure | Sources of funds, debt metrics |
+| Cash Flow Summary | Activity-wise cash flows |
+| Valuation Summary | Method-wise values, range |
+| Risk Indicators | Traffic light alerts for key metrics |
+| Assumptions Summary | Quick reference for key inputs |
 
 ---
 
@@ -72,6 +188,7 @@ Executive summary with totals and averages for quick review.
 |----------|--------|-------|
 | 100,000 | 1,00,000 | 1 Lakh |
 | 10,000,000 | 1,00,00,000 | 1 Crore |
+| 1,000,000,000 | 1,00,00,00,000 | 1 Arab |
 
 ### Excel Format Code for Indian System
 ```
@@ -82,31 +199,44 @@ Executive summary with totals and averages for quick review.
 
 ## How to Use This Template
 
-### Step 1: Import the CSV
-1. Open Excel or Google Sheets
-2. File → Import → Upload `financial_model_template.csv`
-3. Select "Comma" as delimiter
+### Step 1: Import All CSV Files
+1. Open Excel
+2. Create a new workbook with 8 sheets
+3. Rename sheets: Inputs, P&L, Cash Flow, Balance Sheet, Schedules, Valuation, Sensitivity, Dashboard
+4. Import each CSV into respective sheet
 
-### Step 2: Replace Placeholder Formulas
-The template shows `=Formula`, `=Input`, `=SUM` as placeholders.
+### Step 2: Link the Sheets
+Create references between sheets:
+```excel
+# In P&L sheet, reference Inputs:
+=Inputs!$D$12  (for Revenue assumptions)
 
-**Example replacements:**
+# In Balance Sheet, reference P&L:
+='P&L'!D85     (for Net Profit)
+```
 
-| Placeholder | Replace With |
-|-------------|--------------|
-| `=Input` | Direct reference like `=$D$12` |
-| `=Formula` | Calculation like `=D40*$D$15` |
-| `=SUM` | Sum function like `=SUM(D40:H40)` |
+### Step 3: Replace Values
+The template contains sample data for a manufacturing company:
+- Base Revenue: ₹50 Lakhs
+- 5-Year projection period
+- Term Loan: ₹20 Lakhs @ 12%
+- Equity: ₹15 Lakhs
 
-### Step 3: Apply Formatting
-1. **Number format**: Apply Indian numbering (see code above)
-2. **Headers**: Bold, background color
-3. **Inputs**: Light yellow background (industry standard)
-4. **Formulas**: No background (white)
-5. **Outputs**: Light blue or green background
+Customize these in the Inputs sheet.
 
-### Step 4: Add Data Validation
-For input cells, add dropdown lists or number ranges to prevent errors.
+### Step 4: Apply Formatting
+| Element | Format |
+|---------|--------|
+| Headers | Bold, dark background |
+| Inputs | Yellow background |
+| Formulas | White background |
+| Outputs | Blue/Green background |
+| Negatives | Red font or (brackets) |
+
+### Step 5: Validate
+- Check Balance Sheet balances
+- Verify Cash Flow ties to Balance Sheet cash
+- Confirm DSCR and coverage ratios
 
 ---
 
@@ -117,28 +247,44 @@ For input cells, add dropdown lists or number ranges to prevent errors.
 | Yellow | Hardcoded input (editable) |
 | White | Formula (do not edit) |
 | Blue | Output/Result |
+| Green | Positive indicator |
+| Red | Warning/Negative |
 | Grey | Label/Header |
 
 ---
 
-## Formula Examples
+## Key Formulas Reference
 
-### Revenue with Growth
+### Revenue Projection
 ```excel
-Year 1: =Base_Revenue
-Year 2: =D40*(1+$D$15)
-Year 3: =E40*(1+$D$16)
+Year 2 Revenue = Year 1 Revenue × (1 + Growth Rate)
 ```
 
-### Cost Calculation
+### Working Capital
 ```excel
-Raw Material: =D40*$D$21
-Labour: =D40*$D$22
+Receivables = (Revenue / 365) × Receivable Days
+Inventory = (COGS / 365) × Inventory Days
+Payables = (Purchases / 365) × Payable Days
 ```
 
-### Margin Calculation
+### EMI Calculation
 ```excel
-Gross Margin: =(D40-D45)/D40
+=PMT(Rate/12, Tenure×12, -Principal)
+```
+
+### WACC
+```excel
+=(%Equity × Cost of Equity) + (%Debt × Cost of Debt × (1-Tax Rate))
+```
+
+### DCF Terminal Value
+```excel
+=FCF × (1 + Terminal Growth) / (WACC - Terminal Growth)
+```
+
+### DSCR
+```excel
+=EBITDA / (Interest + Principal Repayment)
 ```
 
 ---
@@ -150,16 +296,52 @@ Gross Margin: =(D40-D45)/D40
 - [ ] Consistent formatting throughout
 - [ ] Named ranges for key inputs
 - [ ] Input cells highlighted in yellow
-- [ ] Formula cells protected (optional)
+- [ ] Formula cells protected
 - [ ] Version number in header
-- [ ] Print area defined
+- [ ] Print areas defined
+- [ ] Balance sheet balances
+- [ ] Cash flow ties to balance sheet
+- [ ] Sensitivity ranges are realistic
+- [ ] Scenarios cover reasonable outcomes
+
+---
+
+## Customization Options
+
+### For Different Industries
+Modify the Inputs sheet:
+- **Services**: Remove inventory, adjust margins
+- **Retail**: Add inventory turnover, seasonal adjustments
+- **SaaS**: Add MRR/ARR, churn, CAC/LTV metrics
+- **Real Estate**: Add construction timeline, area-based revenues
+
+### For Different Stages
+- **Startup**: Focus on burn rate, runway, funding rounds
+- **Growth**: Emphasize revenue growth, unit economics
+- **Mature**: Focus on margins, ROCE, dividend capacity
 
 ---
 
 ## File Information
 
-- **Template**: `financial_model_template.csv`
+- **Version**: 2.0 (Enhanced)
 - **Format**: Indian Numbering (₹ Lakhs/Crores)
 - **Layout**: B2 start position
-- **Structure**: Centralized inputs
-- **Formulas**: Simple, readable, auditable
+- **Structure**: Multi-sheet with centralized inputs
+- **Sample Data**: Manufacturing company, 5-year projection
+- **Valuation Methods**: DCF, Comparables, Weighted Average
+
+---
+
+## Support & Updates
+
+For questions or customization requests, refer to:
+1. Sample calculations in each sheet
+2. This documentation guide
+3. Industry-standard financial modeling resources
+
+---
+
+## Disclaimer
+
+This template is for educational and planning purposes. Actual financial decisions should be made with professional advice. Projections are estimates and actual results may vary.

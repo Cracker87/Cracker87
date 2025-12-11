@@ -1,0 +1,95 @@
+,B,C,D,E,F,G,H,I
+,,,,,,,,
+,CASH FLOW STATEMENT,,,,,,,
+,All figures in ₹ Lakhs (Indian Format),,,,,,,
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,PARTICULARS,,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,A. CASH FLOW FROM OPERATING ACTIVITIES,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,Net Profit Before Tax,,,(3.34),(0.41),2.32,4.75,6.43
+,,,,,,,,
+,Adjustments for Non-Cash Items:,,,,,,,
+,Add: Depreciation & Amortization,,,3.10,2.60,2.21,1.88,1.63
+,Add: Interest Expense,,,3.20,2.82,2.40,1.92,1.40
+,Add: Loss on Sale of Assets,,,0.00,0.00,0.00,0.00,0.00
+,Less: Interest Income,,,(0.10),(0.15),(0.20),(0.25),(0.30)
+,Less: Profit on Sale of Assets,,,0.00,0.00,0.00,0.00,0.00
+,Operating Profit Before WC Changes,,,2.86,4.86,6.73,8.30,9.16
+,,,,,,,,
+,Changes in Working Capital:,,,,,,,
+,Decrease/(Increase) in Inventory,,,(0.41),(0.22),(0.24),(0.21),(0.17)
+,Decrease/(Increase) in Receivables,,,(0.61),(0.33),(0.34),(0.31),(0.25)
+,Increase/(Decrease) in Payables,,,0.45,0.24,0.26,0.24,0.19
+,Net Working Capital Change,,,(0.57),(0.31),(0.32),(0.29),(0.23)
+,,,,,,,,
+,Cash Generated from Operations,,,2.29,4.55,6.41,8.01,8.93
+,,,,,,,,
+,Less: Direct Taxes Paid,,,0.00,0.00,(0.60),(1.24),(1.67)
+,,,,,,,,
+,Net Cash from Operating Activities (A),,,2.29,4.55,5.81,6.78,7.26
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,B. CASH FLOW FROM INVESTING ACTIVITIES,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,Purchase of Fixed Assets:,,,,,,,
+,Land,,(5.00),0.00,0.00,0.00,0.00,0.00
+,Building,,(8.00),0.00,0.00,0.00,0.00,0.00
+,Plant & Machinery,,(12.00),(0.50),(0.75),(6.00),(1.25),(1.50)
+,Furniture & Fixtures,,(1.50),0.00,0.00,0.00,0.00,0.00
+,Vehicles,,(2.00),0.00,0.00,0.00,0.00,0.00
+,Computers,,(0.75),0.00,0.00,0.00,0.00,0.00
+,Pre-operative Expenses,,(0.75),0.00,0.00,0.00,0.00,0.00
+,Total Capex,,(30.00),(0.50),(0.75),(6.00),(1.25),(1.50)
+,,,,,,,,
+,Sale of Fixed Assets,,,0.00,0.00,0.00,0.00,0.00
+,Interest Received,,,0.10,0.15,0.20,0.25,0.30
+,,,,,,,,
+,Net Cash from Investing Activities (B),,(30.00),(0.40),(0.60),(5.80),(1.00),(1.20)
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,C. CASH FLOW FROM FINANCING ACTIVITIES,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,Proceeds from Equity:,,,,,,,
+,Promoter's Capital,,15.00,0.00,0.00,0.00,0.00,0.00
+,Additional Equity Infusion,,,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,
+,Proceeds from Borrowings:,,,,,,,
+,Term Loan Received,,20.00,0.00,0.00,0.00,0.00,0.00
+,Working Capital Loan,,5.00,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,
+,Repayment of Borrowings:,,,,,,,
+,Term Loan Repayment,,,,(3.17),(3.55),(3.98),(4.45),(4.99)
+,Working Capital Repayment,,,0.00,0.00,0.00,0.00,0.00
+,,,,,,,,
+,Interest Paid,,,(3.20),(2.82),(2.40),(1.92),(1.40)
+,Dividend Paid,,,0.00,0.00,0.00,(0.50),(1.00)
+,,,,,,,,
+,Net Cash from Financing Activities (C),,40.00,(6.37),(6.37),(6.38),(6.87),(7.39)
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,NET CHANGE IN CASH (A+B+C),,10.00,(4.48),(2.42),(6.37),(1.09),(1.33)
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,Opening Cash Balance,,0.00,10.00,5.52,3.10,(3.27),(4.36)
+,Net Change in Cash,,10.00,(4.48),(2.42),(6.37),(1.09),(1.33)
+,Closing Cash Balance,,10.00,5.52,3.10,(3.27),(4.36),(5.69)
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,CASH FLOW RECONCILIATION,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,Free Cash Flow (FCF),,,1.79,3.80,0.01,5.53,5.76
+,(Operating CF - Capex),,,,,,,
+,,,,,,,,
+,Debt Service Coverage Ratio (DSCR),,,0.36,0.71,0.98,1.21,1.32
+,(EBITDA / (Interest + Principal)),,,,,,,
+,,,,,,,,
+,Interest Coverage Ratio,,,0.93,1.78,2.89,4.46,5.61
+,(EBITDA / Interest),,,,,,,
+,,,,,,,,

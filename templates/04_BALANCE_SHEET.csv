@@ -1,0 +1,115 @@
+,B,C,D,E,F,G,H,I
+,,,,,,,,
+,BALANCE SHEET,,,,,,,
+,All figures in ₹ Lakhs (Indian Format),,,,,,,
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,PARTICULARS,,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,EQUITY & LIABILITIES,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,1. SHAREHOLDERS' FUNDS,,,,,,,
+,──────────────────────────,,,,,,,
+,Share Capital,,15.00,15.00,15.00,15.00,15.00,15.00
+,Reserves & Surplus,,0.00,(2.47),(2.78),(1.05),1.97,5.25
+,Total Shareholders' Funds,,15.00,12.53,12.22,13.95,16.97,20.25
+,,,,,,,,
+,2. NON-CURRENT LIABILITIES,,,,,,,
+,──────────────────────────,,,,,,,
+,Long-Term Borrowings,,,,,,,
+,- Term Loan (Non-Current),,16.83,13.28,9.30,4.85,0.00,0.00
+,Deferred Tax Liability,,0.00,0.00,0.00,0.00,0.00,0.00
+,Other Long-Term Liabilities,,0.00,0.00,0.00,0.00,0.00,0.00
+,Total Non-Current Liabilities,,16.83,13.28,9.30,4.85,0.00,0.00
+,,,,,,,,
+,3. CURRENT LIABILITIES,,,,,,,
+,──────────────────────────,,,,,,,
+,Short-Term Borrowings,,,,,,,
+,- Term Loan (Current Portion),,3.17,3.55,3.98,4.45,4.99,0.00
+,- Working Capital Loan,,5.00,5.00,5.00,5.00,5.00,5.00
+,Trade Payables,,0.00,0.45,0.69,0.95,1.19,1.38
+,Other Current Liabilities,,0.00,0.30,0.35,0.40,0.44,0.47
+,Provisions,,0.00,0.00,0.00,0.60,1.24,1.67
+,Total Current Liabilities,,8.17,9.30,10.02,11.40,12.86,8.52
+,,,,,,,,
+,TOTAL EQUITY & LIABILITIES,,40.00,35.11,31.54,30.20,29.82,28.77
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,ASSETS,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,1. NON-CURRENT ASSETS,,,,,,,
+,──────────────────────────,,,,,,,
+,Fixed Assets (Gross Block):,,,,,,,
+,- Land,,5.00,5.00,5.00,5.00,5.00,5.00
+,- Building,,8.00,8.00,8.00,8.00,8.00,8.00
+,- Plant & Machinery,,12.00,12.50,13.25,19.25,20.50,22.00
+,- Furniture & Fixtures,,1.50,1.50,1.50,1.50,1.50,1.50
+,- Vehicles,,2.00,2.00,2.00,2.00,2.00,2.00
+,- Computers,,0.75,0.75,0.75,0.75,0.75,0.75
+,Total Gross Block,,29.25,29.75,30.50,36.50,37.75,39.25
+,,,,,,,,
+,Less: Accumulated Depreciation,,0.00,2.95,5.43,7.54,9.34,10.91
+,Net Fixed Assets,,29.25,26.80,25.07,28.96,28.41,28.34
+,,,,,,,,
+,Intangible Assets:,,,,,,,
+,- Pre-operative Expenses,,0.75,0.60,0.48,0.38,0.31,0.25
+,Total Non-Current Assets,,30.00,27.40,25.55,29.35,28.71,28.58
+,,,,,,,,
+,2. CURRENT ASSETS,,,,,,,
+,──────────────────────────,,,,,,,
+,Inventories,,0.00,0.41,0.63,0.87,1.08,1.25
+,Trade Receivables,,0.00,0.61,0.94,1.29,1.61,1.86
+,Cash & Cash Equivalents,,10.00,5.52,3.10,0.00,0.00,0.00
+,Bank Overdraft Utilized,,0.00,0.00,0.00,(3.27),(4.36),(5.69)
+,Other Current Assets,,0.00,1.17,1.32,1.96,2.78,2.77
+,Total Current Assets,,10.00,7.71,5.99,0.85,1.11,0.19
+,,,,,,,,
+,TOTAL ASSETS,,40.00,35.11,31.54,30.20,29.82,28.77
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,BALANCE SHEET CHECK,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,Assets - Liabilities,,0.00,0.00,0.00,0.00,0.00,0.00
+,Status,,BALANCED,BALANCED,BALANCED,BALANCED,BALANCED,BALANCED
+,,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,KEY BALANCE SHEET RATIOS,,,,,,,
+,═══════════════════════════════════════════,,,,,,,
+,,,,,,,,
+,LIQUIDITY RATIOS,,,,,,,
+,Current Ratio,,,0.83,0.60,0.07,0.09,0.02
+,(Current Assets / Current Liabilities),,,,,,,
+,,,,,,,,
+,Quick Ratio,,,0.79,0.53,0.00,0.00,0.00
+,((CA - Inventory) / CL),,,,,,,
+,,,,,,,,
+,SOLVENCY RATIOS,,,,,,,
+,Debt-to-Equity Ratio,,,1.80,1.58,1.17,0.88,0.25
+,(Total Debt / Shareholders' Funds),,,,,,,
+,,,,,,,,
+,Debt-to-Assets Ratio,,,0.64,0.61,0.48,0.48,0.17
+,(Total Debt / Total Assets),,,,,,,
+,,,,,,,,
+,Interest Coverage Ratio,,,0.93,1.78,2.89,4.46,5.61
+,(EBIT / Interest Expense),,,,,,,
+,,,,,,,,
+,EFFICIENCY RATIOS,,,,,,,
+,Asset Turnover Ratio,,,1.41,1.82,2.16,2.42,2.70
+,(Revenue / Total Assets),,,,,,,
+,,,,,,,,
+,Fixed Asset Turnover,,,1.85,2.29,2.25,2.54,2.74
+,(Revenue / Net Fixed Assets),,,,,,,
+,,,,,,,,
+,PROFITABILITY RATIOS,,,,,,,
+,Return on Assets (ROA),,,-7.0%,-1.0%,5.7%,11.8%,16.5%
+,(Net Profit / Total Assets),,,,,,,
+,,,,,,,,
+,Return on Equity (ROE),,,-19.7%,-2.5%,12.4%,20.7%,23.5%
+,(Net Profit / Shareholders' Funds),,,,,,,
+,,,,,,,,
+,Return on Capital Employed,,,-0.5%,9.9%,21.2%,30.9%,38.7%
+,(EBIT / Capital Employed),,,,,,,
+,,,,,,,,

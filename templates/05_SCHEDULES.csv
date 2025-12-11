@@ -1,0 +1,142 @@
+,B,C,D,E,F,G,H,I,J
+,,,,,,,,,
+,SUPPORTING SCHEDULES,,,,,,,
+,All figures in ₹ Lakhs (Indian Format),,,,,,,
+,,,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,SCHEDULE 1: WORKING CAPITAL CALCULATION,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,,,,,,,,,
+,ASSUMPTIONS,,Value,Unit,Formula Reference,,,,
+,Annual Revenue,,Varies,Lakhs,From P&L,,,,
+,Cost of Goods Sold,,Varies,Lakhs,From P&L,,,,
+,Operating Expenses,,Varies,Lakhs,From P&L,,,,
+,,,,,,,,,
+,Working Capital Days:,,,,,,,
+,Receivable Days,,45,Days,Credit period to customers,,,,
+,Inventory Days,,30,Days,Stock holding period,,,,
+,Payable Days,,30,Days,Credit from suppliers,,,,
+,Net WC Days,,45,Days,=Rec + Inv - Pay,,,,
+,,,,,,,,,
+,WORKING CAPITAL REQUIREMENT,,Year 1,Year 2,Year 3,Year 4,Year 5,
+,,,,,,,,,
+,Receivables (Days Sales Outstanding),,,,,,,
+,Daily Revenue,,0.014,0.016,0.018,0.020,0.022,Lakhs/day
+,Receivable Days,,45,45,45,45,45,Days
+,Trade Receivables,,0.61,0.94,1.29,1.61,1.86,Lakhs
+,,,,,,,,,
+,Inventory (Days Inventory Outstanding),,,,,,,
+,Daily COGS,,0.014,0.016,0.018,0.020,0.022,Lakhs/day
+,Inventory Days,,30,30,30,30,30,Days
+,Inventory Value,,0.41,0.63,0.87,1.08,1.25,Lakhs
+,,,,,,,,,
+,Payables (Days Payable Outstanding),,,,,,,
+,Daily Purchases,,0.015,0.017,0.020,0.022,0.023,Lakhs/day
+,Payable Days,,30,30,30,30,30,Days
+,Trade Payables,,0.45,0.69,0.95,1.19,1.38,Lakhs
+,,,,,,,,,
+,GROSS WORKING CAPITAL,,1.02,1.57,2.16,2.69,3.11,Lakhs
+,Less: Trade Payables,,(0.45),(0.69),(0.95),(1.19),(1.38),Lakhs
+,NET WORKING CAPITAL,,0.57,0.88,1.21,1.50,1.73,Lakhs
+,,,,,,,,,
+,Change in NWC,,0.57,0.31,0.32,0.29,0.23,Lakhs
+,(Increase requires cash outflow),,,,,,,
+,,,,,,,,,
+,Working Capital as % of Revenue,,1.1%,1.5%,1.9%,2.1%,2.2%,
+,Cash Conversion Cycle,,45,45,45,45,45,Days
+,,,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,SCHEDULE 2: DEBT REPAYMENT - TERM LOAN,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,,,,,,,,,
+,LOAN DETAILS,,,,,,,
+,Principal Amount,,20.00,Lakhs,,,,
+,Interest Rate,,12.00%,Per Annum,,,,
+,Tenure,,5,Years,,,,
+,Repayment Type,,EMI,Equal Monthly Installments,,,,
+,Monthly EMI,,0.44,Lakhs,,,,
+,Annual Payment,,5.34,Lakhs,,,,
+,,,,,,,,,
+,AMORTIZATION SCHEDULE,,Year 1,Year 2,Year 3,Year 4,Year 5,Total
+,,,,,,,,,
+,Opening Balance,,20.00,16.83,13.28,9.30,4.85,
+,,,,,,,,,
+,Principal Repayment,,3.17,3.55,3.98,4.45,4.99,20.14
+,Interest Payment,,2.40,2.02,1.60,1.12,0.60,7.74
+,Total Payment (EMI),,5.57,5.57,5.57,5.57,5.59,27.88
+,,,,,,,,,
+,Closing Balance,,16.83,13.28,9.30,4.85,(0.14),
+,,,,,,,,,
+,Interest as % of Payment,,43.1%,36.3%,28.7%,20.1%,10.7%,
+,Principal as % of Payment,,56.9%,63.7%,71.3%,79.9%,89.3%,
+,,,,,,,,,
+,QUARTERLY BREAKDOWN - YEAR 1,,Q1,Q2,Q3,Q4,Total,
+,Opening Balance,,20.00,19.24,18.44,17.62,,
+,Principal,,0.76,0.80,0.83,0.87,3.26,
+,Interest,,0.59,0.57,0.55,0.53,2.24,
+,Closing Balance,,19.24,18.44,17.62,16.75,,
+,,,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,SCHEDULE 3: WORKING CAPITAL LOAN,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,,,,,,,,,
+,Sanctioned Limit,,5.00,Lakhs,,,,
+,Interest Rate,,14.00%,Per Annum,,,,
+,Nature,,Revolving,Cash Credit/OD facility,,,,
+,Security,,Stock & Debtors,Hypothecation,,,,
+,,,,,,,,,
+,UTILIZATION SCHEDULE,,Year 1,Year 2,Year 3,Year 4,Year 5,
+,Average Utilization,,5.00,5.00,5.00,5.00,5.00,Lakhs
+,Interest Expense,,0.70,0.70,0.70,0.70,0.70,Lakhs
+,,,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,SCHEDULE 4: DEPRECIATION,,,,,,,
+,═══════════════════════════════════════════════════════════════,,,,,,,
+,,,,,,,,,
+,METHOD: Written Down Value (WDV),,,,,,,
+,,,,,,,,,
+,ASSET CLASS,Rate,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5
+,,,,,,,,,
+,LAND,,,,,,,,
+,Gross Block,0%,5.00,5.00,5.00,5.00,5.00,5.00
+,Depreciation,,0.00,0.00,0.00,0.00,0.00,0.00
+,Net Block,,5.00,5.00,5.00,5.00,5.00,5.00
+,,,,,,,,,
+,BUILDING,,,,,,,,
+,Opening WDV,5%,8.00,8.00,7.60,7.22,6.86,6.52
+,Additions,,,0.00,0.00,0.00,0.00,0.00
+,Depreciation,,,0.40,0.38,0.36,0.34,0.33
+,Closing WDV,,,7.60,7.22,6.86,6.52,6.19
+,,,,,,,,,
+,PLANT & MACHINERY,,,,,,,,
+,Opening WDV,15%,12.00,12.00,10.70,9.59,14.65,13.70
+,Additions,,,0.50,0.75,6.00,1.25,1.50
+,Depreciation,,,1.80,1.53,1.30,2.19,2.06
+,Closing WDV,,,10.70,9.59,14.29,13.70,13.15
+,,,,,,,,,
+,FURNITURE & FIXTURES,,,,,,,,
+,Opening WDV,10%,1.50,1.50,1.35,1.22,1.09,0.98
+,Additions,,,0.00,0.00,0.00,0.00,0.00
+,Depreciation,,,0.15,0.14,0.12,0.11,0.10
+,Closing WDV,,,1.35,1.22,1.09,0.98,0.89
+,,,,,,,,,
+,VEHICLES,,,,,,,,
+,Opening WDV,15%,2.00,2.00,1.70,1.45,1.23,1.05
+,Additions,,,0.00,0.00,0.00,0.00,0.00
+,Depreciation,,,0.30,0.26,0.22,0.18,0.16
+,Closing WDV,,,1.70,1.45,1.23,1.05,0.89
+,,,,,,,,,
+,COMPUTERS,,,,,,,,
+,Opening WDV,40%,0.75,0.75,0.45,0.27,0.16,0.10
+,Additions,,,0.00,0.00,0.00,0.00,0.00
+,Depreciation,,,0.30,0.18,0.11,0.06,0.04
+,Closing WDV,,,0.45,0.27,0.16,0.10,0.06
+,,,,,,,,,
+,PRE-OPERATIVE (Amortization),,,,,,,,
+,Opening Balance,20%,0.75,0.75,0.60,0.48,0.38,0.31
+,Amortization,,,0.15,0.12,0.10,0.08,0.06
+,Closing Balance,,,0.60,0.48,0.38,0.31,0.25
+,,,,,,,,,
+,TOTAL DEPRECIATION,,,3.10,2.60,2.21,2.96,2.75
+,Accumulated Depreciation,,,3.10,5.70,7.91,10.87,13.62
+,,,,,,,,,
