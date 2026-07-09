@@ -3,6 +3,9 @@
 > Goal: understand how Littlebird (littlebird.ai) is built, then design and plan a
 > version that runs **entirely on your own machine** — no cloud storage, no cloud
 > inference, no data leaving the device.
+>
+> **Target machine (confirmed):** MacBook with **Apple M4 Pro, 24 GB unified memory**,
+> macOS. This is a strong local-AI target — model picks below are pinned to it.
 
 ---
 
@@ -154,17 +157,28 @@ across your apps without re-explaining context.
 - Native SwiftUI is the clean macOS path; a Tauri/Electron shell is the fastest
   cross-platform path if you want Linux/Windows too.
 
-### Suggested stack (fastest credible path)
-| Layer | Default pick | Why |
+### Suggested stack — pinned to M4 Pro / 24 GB
+| Layer | Pick for this machine | Why |
 |---|---|---|
 | Capture (mac) | Swift + Accessibility API / ScreenCaptureKit | native, low overhead, correct permissions |
-| Transcription | whisper.cpp | fast, fully local |
+| Transcription | whisper.cpp **`medium`** (Metal) | M4 Pro handles medium easily; better meeting accuracy than small |
 | Store | SQLite + FTS5 + sqlite-vec (+ SQLCipher) | one file, hybrid search, encrypted |
-| Embeddings | Ollama `nomic-embed-text` | local, no keys |
-| LLM | Ollama (Llama 3.x / Qwen 2.5) | local inference |
+| Embeddings | Ollama `nomic-embed-text` (~0.3 GB) | local, no keys, fast |
+| LLM (default) | **Qwen2.5-14B-Instruct Q4_K_M** (~9 GB) via Ollama or MLX | best quality that fits comfortably in 24 GB |
+| LLM (fast/routines) | **Llama-3.1-8B** or **Qwen2.5-7B** Q4 (~5 GB) | snappier for background routines / quick asks |
 | Actions | local MCP host | extensible, matches Littlebird's roadmap |
 | Orchestration | Python or TypeScript service | glue: ingest, RAG, routines |
-| UI | SwiftUI menu-bar app (or Tauri for cross-platform) | native feel + kill switch |
+| UI | **SwiftUI menu-bar app** | native mac feel + kill switch (mac-only build) |
+
+**Memory budget (24 GB unified):** a 14B Q4 model uses ~9–11 GB at runtime, leaving
+comfortable room for macOS, the capture service, whisper, and embeddings running
+concurrently. **32B models are not recommended** here — Q4 alone is ~18–20 GB and
+would starve the rest of the pipeline. Stay in the **7B–14B** band.
+
+**Consider MLX over Ollama for inference.** Apple's **MLX** runtime is typically
+faster and lighter than llama.cpp/Ollama on Apple Silicon and uses the unified
+memory + Neural Engine well. Ollama is the easier on-ramp; benchmark both in Phase 0
+and keep whichever gives better tokens/sec at your chosen quant.
 
 ---
 
@@ -227,16 +241,20 @@ redaction rules, incognito, performance tuning (raise capture rate carefully).
 
 ---
 
-## Part 7 — Open decisions (with recommended defaults)
+## Part 7 — Decisions (resolved for M4 Pro / 24 GB)
 
-1. **Target OS?** Default assumed **macOS** (matches Littlebird and the a11y story).
-   Say if it's Linux/Windows — changes the capture layer.
-2. **Native vs cross-platform UI?** Default **SwiftUI menu-bar** for a mac-only build;
-   pick **Tauri** if you want one codebase across OSes.
-3. **How much horsepower?** Your RAM/GPU sets the local LLM ceiling — tell me the
-   machine and I'll pin exact model choices.
+1. **Target OS:** macOS — capture layer uses the Accessibility API + ScreenCaptureKit.
+2. **UI:** **SwiftUI menu-bar app** (mac-only; Tauri not needed).
+3. **Models (pinned):** default **Qwen2.5-14B Q4** for chat, **Llama-3.1-8B/Qwen2.5-7B
+   Q4** for fast background routines, `nomic-embed-text` for embeddings, whisper.cpp
+   `medium` for meetings. Benchmark **MLX vs Ollama** in Phase 0. Stay in the 7B–14B
+   band; no 32B.
 4. **Fork or from-scratch?** Recommend **starting from Screenpipe** for capture+store
    and layering our own RAG/routines/MCP on top, rather than greenfield.
+
+Still worth a quick answer before Phase 1: (a) do you want **meeting transcription**
+in the MVP or later? (b) which real apps do you most want it to "know" (browser,
+Slack, VS Code, Notion…) — that sets which accessibility trees to test first.
 
 ---
 
