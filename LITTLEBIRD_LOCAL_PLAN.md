@@ -6,6 +6,17 @@
 >
 > **Target machine (confirmed):** MacBook with **Apple M4 Pro, 24 GB unified memory**,
 > macOS. This is a strong local-AI target — model picks below are pinned to it.
+>
+> **Status: IMPLEMENTED.** The working application now lives in this repo — see
+> `HOMEBIRD.md` for usage. Phases 0–2 and 4 (store, hybrid search, RAG chat,
+> routines, privacy controls, CLI) are built and covered by a 19-test suite;
+> the macOS capture daemon (`capture/macos/AXReader.swift`) and whisper.cpp
+> meeting script ship as source to compile/run on the Mac. Two corrections vs.
+> the original plan, discovered during implementation: (1) vectors are stored
+> as blobs in plain SQLite with pure-Python cosine + RRF instead of the
+> `sqlite-vec` extension — zero dependencies, plenty fast at personal scale;
+> `sqlite-vec` remains an optional optimization. (2) at-rest encryption defers
+> to FileVault by default; SQLCipher is optional, not the default.
 
 ---
 
